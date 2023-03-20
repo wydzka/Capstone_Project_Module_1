@@ -194,6 +194,7 @@ def angka2():
                             if A =='1':
                                 index = database['Id_karyawan'].index(i)
                                 database['nama_karyawan'][index] = ubah_input_karyawan
+                                print(' ')
                                 print('data telah di ubah')
                                 main_menu_ubah()
                             elif A == '0':
@@ -211,6 +212,7 @@ def angka2():
                             if A =='1':
                                 index = database['Id_karyawan'].index(i)
                                 database['jabatan'][index] = ubah_input_jabatan
+                                print(' ')
                                 print('Data Telah Diubah')
                                 main_menu_ubah()
                             elif A == '0':
@@ -231,6 +233,7 @@ def angka2():
                                     if A =='1':
                                         index = database['Id_karyawan'].index(i)
                                         database['gaji'][index] = input_ubah_gaji
+                                        print(' ')
                                         print('data telah di ubah')
                                         main_menu_ubah()
                                     elif A == '0':
@@ -257,6 +260,7 @@ def angka2():
                                     if A =='1':
                                         index = database['Id_karyawan'].index(i)
                                         database['kpi'][index] = input_ubah_kpi
+                                        print(' ')
                                         print('data telah di ubah')
                                         main_menu_ubah()
                                     elif A == '0':
@@ -390,6 +394,8 @@ def angka3():
                                 del database['nama_karyawan'][i]
                                 del database['jabatan'][i]
                                 del database['gaji'][i]
+                                print(' ')
+                                print('Data Berhasil di hapus')
                                 break
                             elif B == '0':
                                 angka3()
